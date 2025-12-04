@@ -1,0 +1,22 @@
+# NEWS
+
+## v1.0.0
+
+Major update to simplify the package.
+
+* `sintillate()` now only works with vectors, not matrices. Users can supply
+  vectors for x an y, which might reflect effects at multiple observations or
+  resamples for a single observations. This is to make it more difficult to do
+  something stupid when running the function over both resamples and many loci
+  at once.
+* Removed several functions for making specific plots. Instead, the output is
+  intended to be easy to turn into tidy tables that can be passed to ggplot.
+* Added function `vector_q()` to calculate the probability that z overlaps zero.
+* Fixed a bug in how angles are calculated in `angle360()`.
+
+Need to:
+* Consider changing the name
+* Understand what is wrong with the warning messages for the tests. This might be a devtools issue
+
+
+
