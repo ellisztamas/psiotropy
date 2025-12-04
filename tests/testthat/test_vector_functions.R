@@ -11,16 +11,16 @@ test_that('Vector functions give the same answer for vectors as for matrices', {
 
   expect_equal(vector_norm(x,y), as.vector(vector_norm(xmat, ymat)))
   expect_equal(angle360(x, y),   as.vector(angle360(xmat, ymat)))
-  expect_equal(tau(angle360(x,y)), as.vector(tau(angle360(xmat, ymat))))
+  expect_equal(psi(angle360(x,y)), as.vector(psi(angle360(xmat, ymat))))
 })
 
 test_that("vector_norm and angle360 for a pair of floats.", {
   expect_equal(vector_norm(3,4), 5)
-  expect_equal(angle360(0,-4), pi)
+  expect_equal(angle360(0,-4), pi*1.5)
 })
 
-test_that("Tau returns correct value for eight points", {
-  val <- tau(seq(0, 2*pi, pi/8))
+test_that("psi returns correct value for eight points", {
+  val <- psi(seq(0, 2*pi, pi/8))
   out <- c(0, 0.5, 1, 0.5, 0, -0.5, -1, -0.5, 0, 0.5, 1, 0.5,0, -0.5, -1, -0.5, 0)
   expect_equal(round(val,2), out)
 })
