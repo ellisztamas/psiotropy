@@ -10,11 +10,11 @@
 #' element each for x and y coordinates. If NULL, the mean of x and y in
 #' \code{samples} is used. Defaults to NULL.
 #' @returns A vector of positions of each row in \code{samples} projected onto
-#' \code{ref}.
+#' vector \code{ref}.
 #' @author Tom Ellis
 #' @examples
 #' \code{
-#' library(sintillate)
+#' library(psiotropy)
 #' library(MASS)
 #' # To draw numbers from a multivariate normal
 #' sample_mvnorm <- function(mu, sigma = matrix(c(1, 0,0, 1),2,2), n = 10000){
@@ -25,7 +25,7 @@
 #'
 #' vec <- c(1,0) # reference vector
 #' draws <- sample_mvnorm(vec, n = 10)
-#' sin <- sintillate(draws$x, draws$y)
+#' sin <- psiotropy(draws$x, draws$y)
 #'
 #' # calculate what proportion overlap zero.
 #' mean(z_star(sin) > 0)

@@ -3,13 +3,13 @@ Type: Package
 Title: An R package for quantifying trade-offs, pleiotropy and genotype-by-environment interactions
 Version: 0.1.0
 Authors@R: person("Tom", "Ellis", email="thomas.ellis@gmi.oeaw.ac.at", role=c("aut", "cre"))
-Maintainer: Tom Ellis <thomas.ellis@thomas.ellis@gmi.oeaw.ac.at>
+Maintainer: Tom Ellis <thomas.ellis@gmi.oeaw.ac.at>
 Description: psiotropy is a package to quantify correlations for single pairs of
     numbers. The motivating use case is understanding genetic pleiotropy, where
     a single gene affects two (or more) traits at once. The input data are pairs
     of numbers describing an effect of Something in two contexts. psiotropy
     calculates the direction of the joint effect in those context as statistic
-    $\psi$, and the magnitude $z$ of that effect.
+    psi, and the magnitude z of that effect.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true

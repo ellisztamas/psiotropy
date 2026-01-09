@@ -4,7 +4,7 @@
 
 Major update to simplify the package.
 
-* `sintillate()` now only works with vectors, not matrices. Users can supply
+* `psiotropy()` now only works with vectors, not matrices. Users can supply
   vectors for x an y, which might reflect effects at multiple observations or
   resamples for a single observations. This is to make it more difficult to do
   something stupid when running the function over both resamples and many loci

@@ -29,6 +29,8 @@ test_that("angle360 throws NaN for zero-length vectors", {
   x <- 0:2
   y <- 0:2
   expect_warning(angle360(x, y), "are both zero")
-  expect_equal(angle360(x,y), c(NaN, pi/4, pi/4))
+  expect_equal(
+    suppressWarnings(angle360(x,y)), c(NaN, pi/4, pi/4)
+    )
 })
 
