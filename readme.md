@@ -19,7 +19,7 @@
 
 An R package for summarising vectors in a bivariate plane through their angle and vector length. This is primarily aimed at researchers studying pleiotropy and genotype-by-environment interactions in biology, but is generally applicable to any situation involving reaction norms or interaction plots.
 
-As of January 2019 there is currently a manuscript to accompany the package and describe the method in detail which is veyr nearly at the stage of being publishable on bioarxiv. This text will change when that happens.
+See the [preprint](https://doi.org/10.64898/2026.01.09.698568) for full details of the method.
 
 ## Installation
 
@@ -116,7 +116,7 @@ apply(psio$psi, 1, quantile, c(0.025, 0.975))
 
 If you use the package in your work, please cite:
 
-> Ellis, Thomas James (2019), "psiotropy: An R package for quantifying trade-offs, pleiotropy and genotype-by-environment interactions", available from www.github.com/ellisztamas/psiotropy"
+> Ellis, Thomas James (2025), “How and why to quantify pairwise pleiotropy and genotype-by-environment interactions” [biorxiv 2026.01.09.698568](https://doi.org/10.64898/2026.01.09.698568)
 
 ## Issues
 
